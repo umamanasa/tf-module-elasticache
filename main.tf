@@ -45,3 +45,4 @@ resource "aws_elasticache_cluster" "main" {
   security_group_ids   = [aws_security_group.main.id]
   tags        = merge(local.tags, { Name = "${local.name_prefix}-cluster" })
 }
+
