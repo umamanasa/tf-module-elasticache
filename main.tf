@@ -46,3 +46,4 @@ resource "aws_elasticache_cluster" "main" {
   tags        = merge(local.tags, { Name = "${local.name_prefix}-cluster" })
 }
 
+## DOESN'T REQUIRE ANY KMS FOR ELASTICACHE, AS IT IS A MEMORY BASED SERVICE. AMAZON CANNOT READ A DISC FILE.
